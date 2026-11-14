@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    image: container-servermain:latest
+    container_name: container-ServerMain
+    environment:
+      CONTAINER_NAME: container-ServerMain
+    ports:
+      - "8000:8000"
